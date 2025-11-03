@@ -1,0 +1,64 @@
+/* Filter buttons styling */
+.testimonial-filters {
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid #3fbbc0;
+    color: #3fbbc0;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #3fbbc0;
+    color: white;
+}
+
+.filter-btn:focus {
+    outline: none;
+}
+
+/* Admin Panel Styling */
+.admin-panel {
+    margin-top: 30px;
+}
+
+.admin-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.testimonial-item {
+    position: relative;
+}
+
+/* Admin access button */
+.admin-access {
+    margin-top: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin: 2px;
+    }
+    
+    .admin-controls {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
