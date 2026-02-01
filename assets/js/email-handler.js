@@ -1,6 +1,6 @@
 // EmailJS Configuration
 const EMAIL_CONFIG = {
-    serviceID: 'your_service_id',      // Replace with your EmailJS service ID
+    serviceID: 'titan_smtp_service',      // Replace with your EmailJS service ID
     businessTemplateID: 'template_shth7rp',  // Template for business notifications
     customerTemplateID: 'template_xxhyp86',  // Template for customer confirmations
     publicKey: 'D5fG06kvRVAZUEtCu'       // Replace with your EmailJS public key
@@ -84,7 +84,7 @@ class ContactFormHandler {
 
     async sendBusinessNotification(formData) {
         const templateParams = {
-            to_email: 'inquiry@cephronlifesciences.com',
+            email: 'info@cephronlifesciences.com',
             from_name: formData.name,
             from_email: formData.email,
             subject: formData.subject,
@@ -102,12 +102,12 @@ class ContactFormHandler {
 
     async sendCustomerConfirmation(formData) {
         const templateParams = {
-            to_email: formData.email,
+            email: formData.email,
             customer_name: formData.name,
             inquiry_subject: formData.subject,
             inquiry_date: formData.date,
             company_name: 'Cephron LifeSciences',
-            company_email: 'inquiry@cephronlifesciences.com',
+            company_email: 'info@cephronlifesciences.com',
             company_phone: '+91 9453941137',
             company_address: 'Shop No. 5 529D/1/2717 Jannat Complex, Kanchana Bihari Marg Kalyanpur, Lucknow – 226022 UP'
         };
