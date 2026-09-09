@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!--
+    Sitemap for Cephron LifeSciences
+    Website: https://www.cephronlifesciences.com/
+    Last updated: 2025-09-09
+
+    This is a single-page website. The canonical URL is the root.
+    Section anchors are not separate URLs and should not be listed
+    as distinct sitemap entries — they are fragments of the same page.
+  -->
+
+  <url>
+    <loc>https://www.cephronlifesciences.com/</loc>
+    <lastmod>2025-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-in"
+      href="https://www.cephronlifesciences.com/"/>
+  </url>
+
+</urlset>

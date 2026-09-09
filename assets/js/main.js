@@ -123,9 +123,14 @@
   });
 
   /**
-   * Initiate Pure Counter
+   * Initiate Pure Counter (only if the library is loaded).
+   * The stats section is currently commented out, so the PureCounter
+   * vendor script is not loaded. This guard prevents a ReferenceError
+   * that would otherwise halt the rest of this script.
    */
-  new PureCounter();
+  if (typeof PureCounter !== 'undefined') {
+    new PureCounter();
+  }
 
   /**
    * Init swiper sliders

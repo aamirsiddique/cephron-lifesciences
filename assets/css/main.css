@@ -244,6 +244,18 @@ h6 {
   transition: all 0.5s;
 }
 
+/* Links inside the topbar (e.g. phone number) must use the contrast
+   color, otherwise the global accent-colored link style renders them
+   the same color as the topbar background and makes them invisible. */
+.header .topbar a {
+  color: var(--contrast-color);
+}
+
+.header .topbar a:hover {
+  color: var(--contrast-color);
+  opacity: 0.85;
+}
+
 .header .branding {
   min-height: 60px;
   padding: 10px 0;

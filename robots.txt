@@ -1,0 +1,13 @@
+# robots.txt — Cephron LifeSciences
+# https://www.cephronlifesciences.com/
+
+# Allow all well-behaved crawlers full access to the public site
+User-agent: *
+Allow: /
+
+# Block crawlers from accessing raw asset source files that have no search value
+Disallow: /assets/scss/
+Disallow: /assets/vendor/
+
+# Sitemap location
+Sitemap: https://www.cephronlifesciences.com/sitemap.xml
