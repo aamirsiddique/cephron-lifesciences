@@ -5,7 +5,7 @@ const testimonialsData = [
         name: "Dr. Rajesh Kumar",
         position: "Franchise Partner",
         location: "Delhi",
-        image: "assets/img/testimonials/testimonials-1.jpg",
+        image: "assets/img/testimonials/testimonials-1.webp",
         quote: "Cephron LifeSciences has been an excellent partner. Their product quality is outstanding and delivery is always on time. The franchise support team is very responsive and helpful.",
         category: "franchise",
         featured: true,
@@ -16,7 +16,7 @@ const testimonialsData = [
         name: "Mrs. Priya Sharma",
         position: "Healthcare Distributor",
         location: "Mumbai",
-        image: "assets/img/testimonials/testimonials-2.jpg",
+        image: "assets/img/testimonials/testimonials-2.webp",
         quote: "The monopoly rights and marketing support provided by Cephron has helped us establish a strong presence in our territory. Highly recommended for anyone looking to start a pharma business.",
         category: "distributor",
         featured: true,
@@ -27,7 +27,7 @@ const testimonialsData = [
         name: "Mr. Amit Verma",
         position: "Pharmacy Owner",
         location: "Bangalore",
-        image: "assets/img/testimonials/testimonials-3.jpg",
+        image: "assets/img/testimonials/testimonials-3.webp",
         quote: "Working with Cephron LifeSciences has been a game-changer for our pharmacy. Their product range is comprehensive and the quality is consistently excellent.",
         category: "pharmacy",
         featured: true,
@@ -38,7 +38,7 @@ const testimonialsData = [
         name: "Dr. Sunita Patel",
         position: "Medical Representative",
         location: "Pune",
-        image: "assets/img/testimonials/testimonials-4.jpg",
+        image: "assets/img/testimonials/testimonials-4.webp",
         quote: "The transparent business practices and ethical approach of Cephron LifeSciences sets them apart. They truly care about their partners' success and long-term growth.",
         category: "medical",
         featured: true,
@@ -49,7 +49,7 @@ const testimonialsData = [
         name: "Mr. Naveen Singh",
         position: "Healthcare Entrepreneur",
         location: "Chennai",
-        image: "assets/img/testimonials/testimonials-5.jpg",
+        image: "assets/img/testimonials/testimonials-5.webp",
         quote: "Excellent product quality, competitive pricing, and reliable supply chain. Cephron LifeSciences is definitely a trusted partner in the pharmaceutical industry.",
         category: "entrepreneur",
         featured: true,
@@ -519,8 +519,8 @@ class TestimonialsManager {
                         <span>${testimonial.quote}</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                     </p>
-                    <img src="${testimonial.image}" class="testimonial-img" alt="${testimonial.name}" 
-                         onerror="this.src='assets/img/testimonials/default-avatar.jpg'">
+                    <img src="${testimonial.image}" class="testimonial-img" alt="${testimonial.name}" loading="lazy" decoding="async"
+                         onerror="this.onerror=null; this.src=this.src.replace('.webp', '.jpg');">
                     <h3>${testimonial.name} ${testimonial.featured ? '<i class="bi bi-star-fill text-warning"></i>' : ''}</h3>
                     <h4>${testimonial.position}, ${testimonial.location}</h4>
                 </div>

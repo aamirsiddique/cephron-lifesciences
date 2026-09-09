@@ -5,7 +5,7 @@
   <!--
     Sitemap for Cephron LifeSciences
     Website: https://www.cephronlifesciences.com/
-    Last updated: 2025-09-09
+    Last updated: 2026-09-09
 
     This is a single-page website. The canonical URL is the root.
     Section anchors are not separate URLs and should not be listed
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://www.cephronlifesciences.com/</loc>
-    <lastmod>2025-09-09</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link
